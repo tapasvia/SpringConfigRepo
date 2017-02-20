@@ -1,0 +1,14 @@
+spring:
+    profiles: development
+bootrest.customproperty: helloyaml-development
+security.user.name: guest
+security.user.password: guest123
+security.oauth2.client.clientId: trustedclient
+security.oauth2.client.clientSecret: trustedclient123
+security.oauth2.client.authorized-grant-types: authorization_code,refresh_token,password
+security.oauth2.client.scope: openid
+---
+
+spring:
+    profiles: prod
+bootrest.customproperty: helloyaml-prod
